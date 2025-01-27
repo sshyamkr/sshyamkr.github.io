@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Kumar | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #1a202c, #2d3748);
+            color: white;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,developer') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="p-6 flex justify-between items-center bg-gray-900 bg-opacity-80">
+        <h1 class="text-2xl font-bold">Shyam Kumar</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#achievements" class="hover:text-yellow-400">Achievements</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero h-screen flex items-center justify-center text-center">
+        <div class="bg-black bg-opacity-50 p-10 rounded-lg">
+            <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
+            <p class="text-lg mb-6">Showcasing my journey as a developer, projects, and achievements.</p>
+            <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="p-12 bg-gray-800">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">About Me</h3>
+            <p class="text-lg leading-relaxed">
+                Hi, I'm Shyam Kumar, a passionate Full Stack Developer specializing in the MERN stack. With a strong foundation in backend development and a knack for creating efficient, secure, and user-friendly applications, I aim to contribute to meaningful projects that make a difference.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="p-12">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-6">Projects</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">MediBooker</h4>
+                    <p class="text-sm">A Doctor Appointment Management System built with the MERN stack, featuring secure authentication and dynamic booking capabilities.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">Weather Website</h4>
+                    <p class="text-sm">A weather forecasting web app using HTML, CSS, JavaScript, and a weather API.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">Memory Matrix Game</h4>
+                    <p class="text-sm">A fun and interactive memory game developed with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="p-12 bg-gray-800">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Achievements</h3>
+            <ul class="space-y-4">
+                <li>MongoDB Developer Associate Exam - Ongoing Preparation</li>
+                <li>Hackathon on Adaptive Learning Systems - Participated</li>
+                <li>2 Years of Experience as an Analyst at Design Orbit</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="p-12 bg-gray-700">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
+            <p class="text-lg mb-6">Feel free to reach out for collaborations or any queries!</p>
+            <a href="mailto:shyam.kumar@example.com" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="p-6 text-center bg-gray-900">
+        <p>&copy; 2025 Shyam Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
