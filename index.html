@@ -2,33 +2,59 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FW73J94J17"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FW73J94J17');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FW73J94J17"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FW73J94J17');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shyam Kumar | Portfolio</title>
+    <meta name="description" content="Shyam Kumar's Portfolio - Full Stack Developer specializing in MERN stack. Explore my projects like MediBooker, a doctor appointment booking system.">
+    <meta name="keywords" content="shyamkr, MediBooker, MERN stack project, appointment booking system, full stack developer, MongoDB, Express, React, Node.js">
+    <meta name="author" content="Shyam Kumar">
+    <meta property="og:title" content="Shyam Kumar | Full Stack Developer Portfolio">
+    <meta property="og:description" content="Explore my journey as a Full Stack Developer. Projects include MediBooker, a doctor appointment booking system built with MERN stack.">
+    <meta property="og:image" content="https://source.unsplash.com/1600x900/?technology,developer">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Shyam Kumar | Full Stack Developer Portfolio</title>
+    <link rel="canonical" href="https://yourwebsite.com">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom, #1a202c, #2d3748);
+            background: linear-gradient(to bottom, #1a202c, #4a5568);
             color: white;
         }
         .hero {
             background: url('https://source.unsplash.com/1600x900/?technology,developer') no-repeat center center;
             background-size: cover;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .glow {
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+        }
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <header class="p-6 flex justify-between items-center bg-gray-900 bg-opacity-80">
-        <h1 class="text-2xl font-bold">Shyam Kumar</h1>
+        <h1 class="text-3xl font-bold glow">Shyam Kumar</h1>
         <nav>
             <ul class="flex space-x-6">
                 <li><a href="#about" class="hover:text-yellow-400">About</a></li>
@@ -40,36 +66,27 @@
     </header>
 
     <section class="hero h-screen flex items-center justify-center text-center">
-        <div class="bg-black bg-opacity-50 p-10 rounded-lg">
-            <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
-            <p class="text-lg mb-6">Showcasing my journey as a developer, projects, and achievements.</p>
-            <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500">Explore My Work</a>
-        </div>
-    </section>
-
-    <section id="about" class="p-12 bg-gray-800">
-        <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-3xl font-bold mb-6">About Me</h3>
-            <p class="text-lg leading-relaxed">
-                Hi, I'm Shyam Kumar, a passionate Full Stack Developer specializing in the MERN stack. With a strong foundation in backend development and a knack for creating efficient, secure, and user-friendly applications, I aim to contribute to meaningful projects that make a difference.
-            </p>
+        <div class="bg-black bg-opacity-50 p-10 rounded-lg shadow-2xl">
+            <h2 class="text-5xl font-bold mb-4 glow">Welcome to My Portfolio</h2>
+            <p class="text-xl mb-6">Showcasing my journey as a developer, projects, and achievements.</p>
+            <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all">Explore My Work</a>
         </div>
     </section>
 
     <section id="projects" class="p-12">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-3xl font-bold text-center mb-6">Projects</h3>
+            <h3 class="text-4xl font-bold text-center mb-6 glow">Projects</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h4 class="text-xl font-bold mb-2">MediBooker</h4>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
+                    <h4 class="text-2xl font-bold mb-2">MediBooker</h4>
                     <p class="text-sm">A Doctor Appointment Management System built with the MERN stack, featuring secure authentication and dynamic booking capabilities.</p>
                 </div>
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h4 class="text-xl font-bold mb-2">Weather Website</h4>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
+                    <h4 class="text-2xl font-bold mb-2">Weather Website</h4>
                     <p class="text-sm">A weather forecasting web app using HTML, CSS, JavaScript, and a weather API.</p>
                 </div>
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h4 class="text-xl font-bold mb-2">Memory Matrix Game</h4>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
+                    <h4 class="text-2xl font-bold mb-2">Memory Matrix Game</h4>
                     <p class="text-sm">A fun and interactive memory game developed with HTML, CSS, and JavaScript.</p>
                 </div>
             </div>
@@ -78,8 +95,8 @@
 
     <section id="achievements" class="p-12 bg-gray-800">
         <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-3xl font-bold mb-6">Achievements</h3>
-            <ul class="space-y-4">
+            <h3 class="text-4xl font-bold mb-6 glow">Achievements</h3>
+            <ul class="space-y-4 text-lg">
                 <li>MongoDB Developer Associate Exam - Ongoing Preparation</li>
                 <li>Hackathon on Adaptive Learning Systems - Participated</li>
                 <li>2 Years of Experience as an Analyst at Design Orbit</li>
@@ -89,9 +106,9 @@
 
     <section id="contact" class="p-12 bg-gray-700">
         <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
+            <h3 class="text-4xl font-bold mb-6 glow">Get in Touch</h3>
             <p class="text-lg mb-6">Feel free to reach out for collaborations or any queries!</p>
-            <a href="mailto:shyam.kumar@example.com" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500">Email Me</a>
+            <a href="mailto:shyam.kumar@example.com" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all">Email Me</a>
         </div>
     </section>
 
