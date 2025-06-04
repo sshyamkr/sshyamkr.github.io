@@ -1,124 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shyam Kumar's Portfolio - Full Stack Developer with expertise in MERN stack, scalable application design, and RESTful API development. Explore projects like MediBooker and Memory Matrix Game.">
-    <meta name="keywords" content="Shyam Kumar, MediBooker, Full Stack Developer, MERN stack, REST API, MongoDB, Express, React, Node.js, software engineer, coding contests, system optimization">
-    <meta name="author" content="Shyam Kumar">
-    <meta property="og:title" content="Shyam Kumar | Full Stack Developer Portfolio">
-    <meta property="og:description" content="Explore my journey as a Full Stack Developer. Projects include MediBooker, a doctor appointment booking system built with MERN stack.">
-    <meta property="og:image" content="https://source.unsplash.com/1600x900/?technology,developer">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Shyam Kumar | Full Stack Developer Portfolio</title>
-    <link rel="canonical" href="https://yourwebsite.com">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom, #1a202c, #4a5568);
-            color: white;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/1600x900/?technology,developer') no-repeat center center;
-            background-size: cover;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .glow {
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
-        }
-        .card {
-            transition: transform 0.3s ease-in-out;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shyam Kumar | Full Stack Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(to bottom, #1a202c, #4a5568); color: white; }
+    .glow { text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); }
+    .card { transition: transform 0.3s ease-in-out; }
+    .card:hover { transform: scale(1.05); }
+  </style>
 </head>
-
 <body>
-    <header class="p-6 flex justify-between items-center bg-gray-900 bg-opacity-80">
-        <h1 class="text-3xl font-bold glow">Shyam Kumar</h1>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
-                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
-                <li><a href="#achievements" class="hover:text-yellow-400">Achievements</a></li>
-                <li><a href="#engagements" class="hover:text-yellow-400">Engagements</a></li>
-                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="p-6 flex justify-between items-center bg-gray-900 bg-opacity-80">
+    <h1 class="text-3xl font-bold glow">Shyam Kumar</h1>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+        <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+        <li><a href="#achievements" class="hover:text-yellow-400">Achievements</a></li>
+        <li><a href="#engagements" class="hover:text-yellow-400">Engagements</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero h-screen flex items-center justify-center text-center">
-        <div class="bg-black bg-opacity-50 p-10 rounded-lg shadow-2xl">
-            <h2 class="text-5xl font-bold mb-4 glow">Welcome to My Portfolio</h2>
-            <p class="text-xl mb-6">Showcasing my journey as a developer, projects, and achievements.</p>
-            <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all">Explore My Work</a>
+  <section class="hero h-screen flex flex-col items-center justify-center text-center">
+    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_totrpclr.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+    <h2 class="text-5xl font-bold mb-4 glow">Hi, I'm Shyam Kumar</h2>
+    <h3 class="text-2xl mb-6">I'm a <span class="auto-type text-yellow-400"></span></h3>
+    <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all">Explore My Work</a>
+  </section>
+
+  <section id="projects" class="p-12">
+    <h3 class="text-4xl font-bold text-center mb-6 glow">Projects</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
+        <h4 class="text-2xl font-bold mb-2">MediBooker</h4>
+        <p>A MERN stack Doctor Appointment System with JWT auth and BMI/Fat Calculators.</p>
+        <a href="#" class="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded">View Demo</a>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
+        <h4 class="text-2xl font-bold mb-2">Weather Website</h4>
+        <p>Weather forecasting app using HTML, CSS, JavaScript, and an API.</p>
+        <a href="#" class="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded">View Demo</a>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
+        <h4 class="text-2xl font-bold mb-2">Memory Matrix Game</h4>
+        <p>Interactive memory game with dynamic score tracking and animations.</p>
+        <a href="#" class="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded">View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="p-12 bg-gray-800">
+    <h3 class="text-4xl font-bold text-center mb-6 glow">Skills</h3>
+    <div class="max-w-xl mx-auto">
+      <div class="mb-4">
+        <h4>React.js</h4>
+        <div class="w-full bg-gray-600 rounded-full h-2.5">
+          <div class="bg-yellow-400 h-2.5 rounded-full w-4/5"></div>
         </div>
-    </section>
-
-    <section id="projects" class="p-12">
-        <div class="max-w-6xl mx-auto">
-            <h3 class="text-4xl font-bold text-center mb-6 glow">Projects</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
-                    <h4 class="text-2xl font-bold mb-2">MediBooker</h4>
-                    <p class="text-sm">A full-stack Doctor Appointment Management System using the MERN stack. Features JWT-based authentication, role-based access, dynamic scheduling, and integrated BMI & Fat Calculators.</p>
-                </div>
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
-                    <h4 class="text-2xl font-bold mb-2">Weather Website</h4>
-                    <p class="text-sm">A weather forecasting web app built with HTML, CSS, JavaScript, and a live weather API for real-time weather data based on user location.</p>
-                </div>
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg card">
-                    <h4 class="text-2xl font-bold mb-2">Memory Matrix Game</h4>
-                    <p class="text-sm">An interactive browser-based memory game featuring dynamic card flipping, match validation, score tracking, and responsive design for seamless cross-device gameplay.</p>
-                </div>
-            </div>
+      </div>
+      <div class="mb-4">
+        <h4>Node.js</h4>
+        <div class="w-full bg-gray-600 rounded-full h-2.5">
+          <div class="bg-yellow-400 h-2.5 rounded-full w-4/5"></div>
         </div>
-    </section>
-
-    <section id="achievements" class="p-12 bg-gray-800">
-        <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-6 glow">Achievements</h3>
-            <ul class="space-y-4 text-lg">
-                <li>1st Position - Igniting Ideas 2025 (Academic Innovation Event)</li>
-                <li>MongoDB Node.js Developer Path Certification (2024)</li>
-                <li>5-Star Ratings on HackerRank (C++, Java, JavaScript)</li>
-                <li>Over 200 coding challenges solved on HackerRank and LeetCode</li>
-                <li>Participated in Hackathon on Adaptive Learning Systems</li>
-                <li>2 Years of Experience as an Analyst at Design Orbit</li>
-            </ul>
+      </div>
+      <div class="mb-4">
+        <h4>MongoDB</h4>
+        <div class="w-full bg-gray-600 rounded-full h-2.5">
+          <div class="bg-yellow-400 h-2.5 rounded-full w-3/4"></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="engagements" class="p-12 bg-gray-800">
-        <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-6 glow">Additional Engagements</h3>
-            <ul class="space-y-4 text-lg">
-                <li>Volunteer at Navprayas NGO, contributing to community education in Gaya</li>
-                <li>Active participant in coding contests, technical webinars, and software development workshops</li>
-            </ul>
-        </div>
-    </section>
+  <section id="achievements" class="p-12 bg-gray-800">
+    <h3 class="text-4xl font-bold text-center mb-6 glow">Achievements</h3>
+    <ul class="space-y-4 text-lg max-w-3xl mx-auto">
+      <li>1st Position - Igniting Ideas 2025</li>
+      <li>MongoDB Node.js Developer Path Certification (2024)</li>
+      <li>5-Star Ratings on HackerRank (C++, Java, JavaScript)</li>
+      <li>200+ coding challenges on HackerRank and LeetCode</li>
+    </ul>
+  </section>
 
-    <section id="contact" class="p-12 bg-gray-700">
-        <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-6 glow">Get in Touch</h3>
-            <p class="text-lg mb-6">Feel free to reach out for collaborations or any queries!</p>
-            <a href="https://www.linkedin.com/in/shyam-kumar-610853190/" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all">LinkedIn</a>
-        </div>
-    </section>
+  <section id="engagements" class="p-12 bg-gray-800">
+    <h3 class="text-4xl font-bold text-center mb-6 glow">Engagements</h3>
+    <ul class="space-y-4 text-lg max-w-3xl mx-auto">
+      <li>Volunteer at Navprayas NGO, Gaya</li>
+      <li>Participant in coding contests, tech webinars, and workshops</li>
+    </ul>
+  </section>
 
-    <footer class="p-6 text-center bg-gray-900">
-        <p>&copy; 2025 Shyam Kumar. All rights reserved.</p>
-    </footer>
+  <section id="contact" class="p-12 bg-gray-700">
+    <h3 class="text-4xl font-bold mb-6 text-center glow">Get in Touch</h3>
+    <div class="text-center">
+      <a href="https://www.linkedin.com/in/shyam-kumar-610853190/" class="bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="p-6 text-center bg-gray-900">
+    <p>&copy; 2025 Shyam Kumar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Full Stack Developer", "Problem Solver", "Tech Enthusiast"],
+      typeSpeed: 70,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
 </body>
 </html>
